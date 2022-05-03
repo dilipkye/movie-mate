@@ -8,8 +8,8 @@ import java.util.List;
 
 public interface ItemRepository extends MongoRepository<Movie, String> {
 
-    @Query("{name:'?0'}")
-    Movie findItemByName(String name);
+    @Query("{title:'?0'}")
+    Movie findItemByName(String title);
 
     @Query(value="{category:'?0'}", fields="{'name' : 1, 'quantity' : 1}")
     List<Movie> findAll(String category);
