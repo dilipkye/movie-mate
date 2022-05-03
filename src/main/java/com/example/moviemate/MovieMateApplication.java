@@ -19,10 +19,7 @@ public class MovieMateApplication {
 
 	public static void main(String[] args) {
 
-		//SpringApplication.run(MovieMateApplication.class, args);
-
-		MovieMateApplication customer=new MovieMateApplication();
-		customer.run();
+		SpringApplication.run(MovieMateApplication.class, args);
 	}
 
 	public void run(String... args) {
